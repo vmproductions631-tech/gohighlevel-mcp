@@ -1,0 +1,30 @@
+node_modules/
+dist/
+.env
+*.log
+
+# --- secret patterns (added by repo-backup hardening) ---
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+credentials.json
+service-account*.json
+
+# --- portfolio hygiene ---
+*.sqlite
+*.sqlite3
+*.db
+runs/
+coverage/
+.cache/
+.DS_Store
+Thumbs.db
